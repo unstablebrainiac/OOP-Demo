@@ -57,6 +57,11 @@ class Point {
     public static Point divideAt(Point point1, Point point2, double k) {
         return divideAt(point1, point2, k, 1);
     }
+    public static Point getRandomPoint(double maxX, double maxY) {
+        double x = Math.random() * maxX * 2 - maxX;
+        double y = Math.random() * maxY * 2 - maxY;
+        return new Point(x,y);
+    }
 
     public String toString() {
         return "(" + x + "," + y + ")";

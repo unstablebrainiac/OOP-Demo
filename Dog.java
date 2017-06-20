@@ -8,10 +8,11 @@ class Dog extends Animal {
     public void moveTo(Point a) {
         walk();
         super.moveTo(a);
+        System.out.println(a);
     }
 
     private void walk() {
         // Add walking animation here
-        System.out.println("Walking...");
+        System.out.print(color + " dog is walking to ");
     }
 }

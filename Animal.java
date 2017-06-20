@@ -35,4 +35,8 @@ class Animal {
     public void celerateBirthday() {
         age++;
     }
+
+    public void die() {
+        age = -1;
+    }
 }
